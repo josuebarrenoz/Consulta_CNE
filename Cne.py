@@ -48,7 +48,7 @@ def run():
     tiempo_final = time.time()
 
     #Testeando programa
-    print(lines)
+    #print(lines)
 
     #Midiendo el tiempo de ejecucion
     tiempo_ejecucion = tiempo_final - tiempo_inicio
@@ -60,8 +60,8 @@ def run():
     #print(consulta.nombre)
 
     #Escribiendo los resultados
-    #with open(r'Resultados.txt', 'w', encoding="utf8") as f:
-    #    f.writelines(lines)
+    with open(r'Resultados.txt', 'w', encoding="utf8") as f:
+        f.writelines(lines)
 
 if __name__=="__main__":
     run()
